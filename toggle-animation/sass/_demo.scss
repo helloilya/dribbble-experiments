@@ -1,0 +1,60 @@
+/**
+ *	Base
+ */
+
+body {
+	width: 100%;
+	padding: 4em 0;
+	font-size: 17px;
+	line-height: 20px;
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	color: #2e3444;
+	background-color: #f3f3f3;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+}
+
+a {
+
+	color: #7e86fa;
+	text-decoration: none;
+	transition: all 0.35s;
+
+	&:hover {
+		color: #4f58dc;
+		text-decoration: none;
+	}
+
+}
+
+
+
+/**
+ *	Demo
+ */
+
+h1 {
+	margin: 0;
+	padding: 0 2em;
+	line-height: 1.2em;
+	font-weight: 900;
+	text-align: center;
+}
+
+h4 {
+	padding: 0 2em;
+	font-weight: 300;
+	text-align: center;
+}
+
+.demo {
+
+	padding: 0 2em;
+	text-align: center;
+
+	.dr-checkbox {
+		display: inline-block;
+		margin: 1em;
+	}
+
+}

@@ -8,6 +8,7 @@ You'll find links to the directory with example.
 
 ### Release History
 
+* 1.1.0 — Added toggle/checkbox animation.
 * 1.0.0 — Added polygon demo.
 
 ### License
