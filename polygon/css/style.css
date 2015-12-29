@@ -1,0 +1,18 @@
+body { width: 100%; padding: 4em 0; font-size: 17px; line-height: 20px; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #2e3444; background-color: #f3f3f3; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+a { color: #7e86fa; text-decoration: none; -webkit-transition: all 0.35s; -moz-transition: all 0.35s; -o-transition: all 0.35s; transition: all 0.35s; }
+a:hover { color: #4f58dc; text-decoration: none; }
+
+h1 { margin: 0; padding: 0 2em; line-height: 1.2em; font-weight: 900; text-align: center; }
+h4 { padding: 0 2em; font-weight: 300; text-align: center; }
+
+.demo { padding: 1em 2em; text-align: center; }
+
+/* Polygon */
+
+.dr-polygon { display: inline-block; position: relative; margin-top: 43.75px; margin-bottom: 43.75px; vertical-align: middle; z-index: 10; zoom: 1; }
+.dr-polygon-wrapper { display: block; width: 175px; height: 101px; border: none; background: #fff; background-position: 50% 50%; -moz-background-size: auto 218.75px; -o-background-size: auto 218.75px; background-size: auto 218.75px; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; }
+.dr-polygon-wrapper-corner { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: -1; background: inherit; -webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0; -webkit-transform: rotate(-60deg); -moz-transform: rotate(-60deg); -o-transform: rotate(-60deg); transform: rotate(-60deg); -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; backface-visibility: hidden; overflow: hidden; }
+.dr-polygon-wrapper-corner::before { width: 218.75px; height: 218.75px; position: absolute; left: 0; bottom: 0; background: inherit; -webkit-transform: rotate(60deg) translate(40.25px, 48.65px); -moz-transform: rotate(60deg) translate(40.25px, 48.65px); -o-transform: rotate(60deg) translate(40.25px, 48.65px); transform: rotate(60deg) translate(40.25px, 48.65px); content: ''; }
+.dr-polygon-wrapper-corner-first { -webkit-transform: rotate(60deg); -moz-transform: rotate(60deg); -o-transform: rotate(60deg); transform: rotate(60deg); }
+.dr-polygon-wrapper-corner-first::before { top: 0; -webkit-transform: rotate(-60deg) translate(40.25px, -48.65px); -moz-transform: rotate(-60deg) translate(40.25px, -48.65px); -o-transform: rotate(-60deg) translate(40.25px, -48.65px); transform: rotate(-60deg) translate(40.25px, -48.65px); }

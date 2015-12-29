@@ -1,0 +1,66 @@
+/**
+ *	Polygon
+ */
+
+.dr-polygon {
+
+	display: inline-block;
+	position: relative;
+	margin-top: $width/4;
+	margin-bottom: $width/4;
+	vertical-align: middle;
+	z-index: 10;
+	zoom: 1;
+
+	&-wrapper {
+
+		display: block;
+		width: $width;
+		height: $height;
+		border: none;
+		background: #fff;
+		background-position: 50% 50%;
+		background-size: auto $width + $width/4;
+		border-radius: $radius;
+
+		&-corner {
+
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			background: inherit;
+			border-radius: $radius;
+			transform: rotate(-60deg);
+			backface-visibility: hidden;
+			overflow: hidden;
+
+			&::before {
+				width: $width + $width/4;
+				height: $width + $width/4;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				background: inherit;
+				transform: rotate(60deg) translate($translateX, $translateY);
+				content: '';
+			}
+
+			&-first {
+
+				transform: rotate(60deg);
+
+				&::before {
+					top: 0;
+					transform: rotate(-60deg) translate($translateX, -$translateY);
+				}
+
+			}
+
+		}
+
+	}
+
+}

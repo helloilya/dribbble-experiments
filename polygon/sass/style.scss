@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// Variable
+
+$width: 175px;
+$shiftY: 27.8;
+$radius: 0;
+
+$height: ceil($width / 1.74);
+$translateX: 23 * ($width / 100);
+$translateY: $shiftY * ($width / 100);
+
+// Import
+
+@import "demo", "polygon";
